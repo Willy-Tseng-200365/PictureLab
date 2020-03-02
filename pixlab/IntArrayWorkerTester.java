@@ -23,7 +23,7 @@ public class IntArrayWorkerTester
   }
   
   /** Method to test getCount*/
-  public int getCount(int[][] num){
+  public static int getCount(int[][] num){
       int ans = 0;  
       for(int i = 0; i< num.length-1; i++)
       {
