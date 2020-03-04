@@ -20,11 +20,27 @@ public class PictureTester
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
-    Picture caterpillar = new Picture("caterpillar.jpg");
+    Picture caterpillar = new Picture("Obama.jpg");
     caterpillar.explore();
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
+  public static void testMirrorHorizontal()
+  {
+    Picture nigerian = new Picture("Obama.jpg");
+    nigerian.explore();
+    nigerian.mirrorHorizontal();
+    nigerian.explore();
+  }
+   public static void testMirrorEither()
+  {
+    Picture nigerian = new Picture("Trump.jpg");
+    nigerian.explore();
+    nigerian.mirrorHorizontal();
+    nigerian.mirrorVertical();
+    nigerian.explore();
+  }
+  
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -65,8 +81,10 @@ public class PictureTester
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    //testMirrorVertical();
-    //testMirrorTemple();
+    testMirrorVertical();
+    testMirrorTemple();
+    testMirrorHorizontal();
+    testMirrorEither();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
