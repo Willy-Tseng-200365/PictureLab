@@ -20,21 +20,21 @@ public class PictureTester
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
-    Picture caterpillar = new Picture("Obama.jpg");
+    Picture caterpillar = new Picture("yaoMing.jpg");
     caterpillar.explore();
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
   public static void testMirrorHorizontal()
   {
-    Picture nigerian = new Picture("Obama.jpg");
+    Picture nigerian = new Picture("Trump");
     nigerian.explore();
     nigerian.mirrorHorizontal();
     nigerian.explore();
   }
    public static void testMirrorEither()
   {
-    Picture nigerian = new Picture("Trump.jpg");
+    Picture nigerian = new Picture("puttinMonkey.jpg");
     nigerian.explore();
     nigerian.mirrorHorizontal();
     nigerian.mirrorVertical();
