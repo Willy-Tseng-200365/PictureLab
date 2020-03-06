@@ -16,25 +16,31 @@ public class PictureTester
     beach.zeroBlue();
     beach.explore();
   }
-  
+  public static void testMirrorLeftToRight()
+  {
+      Picture haGay = new Picture("Trump.jpg");
+      haGay.explore();
+      haGay.mirrorLeft();
+      haGay.explore();
+    }
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
-    Picture caterpillar = new Picture("yaoMing.jpg");
+    Picture caterpillar = new Picture("Trump.jpg");
     caterpillar.explore();
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
   public static void testMirrorHorizontal()
   {
-    Picture nigerian = new Picture("Trump");
+    Picture nigerian = new Picture("Trump.jpg");
     nigerian.explore();
     nigerian.mirrorHorizontal();
     nigerian.explore();
   }
    public static void testMirrorEither()
   {
-    Picture nigerian = new Picture("puttinMonkey.jpg");
+    Picture nigerian = new Picture("Trump.jpg");
     nigerian.explore();
     nigerian.mirrorHorizontal();
     nigerian.mirrorVertical();
@@ -74,6 +80,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+    testMirrorLeftToRight();
     testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
